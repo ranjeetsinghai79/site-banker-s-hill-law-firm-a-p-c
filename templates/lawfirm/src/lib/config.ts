@@ -2,109 +2,61 @@ import type { SiteConfig } from "@core/web/types"
 
 export const config: SiteConfig = {
   business: {
-  city: "Tracy",
-  theme: "noir",
-  niche: "lawfirm",
-  name: "Caldwell & Associates",
-  tagline: "Fighting For You. Every Case. Every Time.",
-  phone: "(555) 567-8901",
-  phoneHref: "tel:+15555678901",
-  email: "hello@caldwelllaw.com",
-  address: "Tracy, California",
-  serviceAreas: ["Tracy", "Stockton", "Modesto", "Sacramento", "San Jose", "Oakland"],
-  license: "California State Bar #456789",
-  since: "2003",
-  google_rating: "4.9",
-  review_count: "156",
-  emergency: true,
-  social: { google: "https://google.com", yelp: "https://yelp.com", facebook: "https://facebook.com" },
-},
+    name: "Banker's Hill Law Firm, A.P.C.",
+    tagline: "Your Legal Advocates. We Fight.",
+    phone: "(619) 230-0330",
+    phoneHref: "tel:+16192300330",
+    email: "info@bankershilllaw.com",
+    address: "2355 India St, San Diego, CA 92101",
+    city: "San Diego",
+    serviceAreas: ["San Diego", "Chula Vista", "National City", "El Cajon", "La Mesa", "Spring Valley", "Santee"],
+    license: "State Bar of California",
+    since: "2005",
+    google_rating: "4.9",
+    review_count: "200",
+    emergency: false,
+    theme: "slate",
+    niche: "lawfirm",
+  },
 
   services: [
-  { icon: "car", title: "Personal Injury", desc: "Car accidents, slip & fall, workplace injuries. No fee unless we win. Maximum compensation for your suffering.", urgent: true },
-  { icon: "users", title: "Family Law", desc: "Divorce, child custody, spousal support, and adoption. Protecting your family's future with compassion and strength.", urgent: false },
-  { icon: "shield", title: "Criminal Defense", desc: "DUI, drug charges, assault, theft. We defend your rights aggressively from arrest through trial.", urgent: true },
-  { icon: "briefcase", title: "Business Law", desc: "Contracts, partnerships, LLC formation, disputes. Legal protection for every stage of your business.", urgent: false },
-  { icon: "file-text", title: "Estate Planning", desc: "Wills, trusts, power of attorney, and probate. Secure your legacy and protect your loved ones.", urgent: false },
-  { icon: "globe", title: "Immigration Law", desc: "Visas, green cards, citizenship, deportation defense. Navigating complex immigration with decades of experience.", urgent: false },
-],
+    { icon: "shield-check", title: "Personal Injury", desc: "We represent victims of various accidents, ensuring fair compensation for their suffering.", urgent: false },
+    { icon: "truck", title: "Car Accidents", desc: "Expert legal support for car accident victims, navigating claims and securing your rights.", urgent: false },
+    { icon: "briefcase", title: "Workers’ Compensation", desc: "Assisting injured workers in obtaining the benefits they deserve for workplace incidents.", urgent: false },
+    { icon: "home", title: "Estate Planning", desc: "Comprehensive estate planning services to protect your assets and secure your family's future.", urgent: false },
+    { icon: "dollar-sign", title: "Bankruptcy", desc: "Guiding individuals through Chapter 7 and Chapter 13 bankruptcy for a fresh financial start.", urgent: false },
+    { icon: "award", title: "Immigration Law", desc: "Navigating complex immigration processes for work, family, and permanent residency visas.", urgent: false }
+  ],
 
   testimonials: [
-  { name: "David R.", location: "Tracy, CA", stars: 5, text: "After my car accident, I was overwhelmed. Caldwell & Associates handled everything — insurance, medical bills, settlement. Got 3x what the insurance offered." },
-  { name: "Maria G.", location: "Stockton, CA", stars: 5, text: "Went through a difficult divorce with children involved. They fought hard for my custody rights while being sensitive to the emotional toll. Couldn't have done it without them." },
-  { name: "James T.", location: "Modesto, CA", stars: 5, text: "Faced criminal charges that could have ruined my career. They had the charges dismissed. Professional, responsive, and genuinely cared about my outcome." },
-],
+    { name: "Sarah L.", location: "San Diego, CA", stars: 5, text: "After my car accident, Banker's Hill Law Firm was a lifesaver. They handled everything from medical bills to insurance claims, allowing me to focus on recovery. Their team was incredibly supportive and secured a settlement far beyond my expectations. Highly recommend their professional and compassionate service!" },
+    { name: "Mark T.", location: "Chula Vista, CA", stars: 5, text: "I was facing a difficult workers' compensation case, and Banker's Hill Law Firm stepped in with expert guidance. They explained every step clearly and fought tirelessly for my rights. Thanks to them, I received the benefits I needed to get back on my feet. Truly dedicated and effective." },
+    { name: "Jessica R.", location: "La Mesa, CA", stars: 5, text: "Estate planning felt overwhelming until I consulted with Banker's Hill Law Firm. They made the process simple and clear, helping me create a comprehensive plan that gives me peace of mind. Their attention to detail and personalized approach were exceptional. A truly trustworthy firm." }
+  ],
 
   trustBadges: [
-  "20+ Years Experience", "No Fee Unless We Win", "Free Consultations",
-  "AV Preeminent Rated", "Super Lawyers 2024", "1,000+ Cases Won"
-],
+    "State Bar Licensed", "Free Case Evaluation", "Client-Focused Representation", "Experienced Legal Team", "Contingency Fee Basis", "Trusted Local Firm"
+  ],
 
   stats: [
-  {
-    "value": 4.9,
-    "label": "Google Rating",
-    "suffix": "★",
-    "decimals": 1
-  },
-  {
-    "value": 780,
-    "label": "Jobs Done",
-    "suffix": "+",
-    "decimals": 0
-  },
-  {
-    "value": 23,
-    "label": "Yrs Experience",
-    "suffix": "+",
-    "decimals": 0
-  }
-],
+    { value: 4.9, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 1000, label: "Cases Won", suffix: "+", decimals: 0 },
+    { value: 15, label: "Yrs Experience", suffix: "+", decimals: 0 }
+  ],
 
   reasons: [
-  {
-    "icon": "clock",
-    "title": "Fast Response",
-    "desc": "Same-day service when you need it. We don't keep customers waiting."
-  },
-  {
-    "icon": "dollar-sign",
-    "title": "Upfront Pricing",
-    "desc": "Quote before work starts. The number we say is the number you pay."
-  },
-  {
-    "icon": "award",
-    "title": "Certified Professionals",
-    "desc": "Licensed, insured, and trained. Real expertise on every job."
-  },
-  {
-    "icon": "thumbs-up",
-    "title": "Satisfaction Guarantee",
-    "desc": "100% happy or we come back and make it right. No questions asked."
-  },
-  {
-    "icon": "phone",
-    "title": "AI Intake 24/7",
-    "desc": "AI answers calls and texts around the clock — qualifies leads, schedules consultations, and captures case details before your team follows up."
-  },
-  {
-    "icon": "truck",
-    "title": "Fully Equipped",
-    "desc": "Trucks stocked with everything needed. First-visit completion rate above 90%."
-  }
-],
+    { icon: "clock", title: "Timely Action", desc: "We act swiftly to protect your rights and build a strong case from the start." },
+    { icon: "dollar-sign", title: "No Win, No Fee", desc: "You pay nothing unless we win your personal injury or workers' comp case." },
+    { icon: "award", title: "Experienced Attorneys", desc: "Our team brings years of specialized legal expertise to every case." },
+    { icon: "thumbs-up", title: "Client Satisfaction", desc: "We prioritize clear communication and achieving the best outcomes for our clients." },
+    { icon: "phone", title: "Accessible Support", desc: "Our team is available to answer your questions and provide updates." },
+    { icon: "shield-check", title: "Dedicated Advocacy", desc: "We are fierce advocates for justice, fighting tirelessly for your best interests." }
+  ],
 
-  formServiceOptions: [
-  "Personal Injury",
-  "Family Law",
-  "Criminal Defense",
-  "Business Law",
-  "Estate Planning",
-  "Immigration Law"
-],
+  formServiceOptions: ["Personal Injury", "Car Accidents", "Workers’ Compensation", "Estate Planning", "Bankruptcy", "Immigration Law"]
 }
 
-// Backward compat re-exports
+// Backward-compat re-exports
 export const BUSINESS = config.business
 export const SERVICES = config.services!
 export const TESTIMONIALS = config.testimonials!
